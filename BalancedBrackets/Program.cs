@@ -7,6 +7,7 @@ namespace BalancedBracketsNS
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            BalancedBrackets.OpenBeforeClosed("Launch[Code]");
         }
     }
 }

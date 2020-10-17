@@ -39,5 +39,26 @@ namespace BalancedBracketsNS
             }
             return brackets == 0;
         }
+
+        public static bool OpenBeforeClosed(String str)
+        {
+            return str.IndexOf("[") < str.IndexOf("]");
+        }
+
+        public static bool EmptyString(String str)
+        {
+            //Console.WriteLine(str.IndexOf("[") + " and " + str.IndexOf("]"));
+            //if (str.IndexOf("[") < str.IndexOf("]"))
+            //{
+            //    Console.WriteLine("True");
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+
+            return str.IndexOf("[") < str.IndexOf("]");
+        }
     }
 }
